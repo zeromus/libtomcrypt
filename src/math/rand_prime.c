@@ -10,7 +10,7 @@
  */
 #include "tomcrypt.h"
 
-#if !defined LTC_NO_MATH && !defined LTC_NO_PRNGS
+#if (!defined LTC_NO_MATH && !defined LTC_NO_PRNGS) || defined LTC_MRSA
 
 /**
   @file rand_prime.c
